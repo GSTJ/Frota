@@ -16,8 +16,8 @@
     cd Frota/
     npm install
     ```
- 
-2.  **Create a .env file.**
+
+3.  **Create a .env file.**
 
     Create a file containing your Google Key and endpoint
 
@@ -26,7 +26,7 @@
     API_ENDPOINT=
     ```
 
-3.  **Start developing.**
+4.  **Start developing.**
 
     Initiate the project in development mode
 
@@ -35,8 +35,10 @@
     npm run ios
     ```
 
+## Download app
+
+https://docs.google.com/document/d/1o5IqF2krymfnaoaaqMAUXTlq-gxIPBPz8UrZ02b4rio/edit?usp=sharing
 
 ## What was it built on?
 
 React-native, Styled-components, Redux, Redux Sagas, React-navigation + more
-
