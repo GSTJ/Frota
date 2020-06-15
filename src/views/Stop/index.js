@@ -5,9 +5,10 @@ import { PersistentHeader, Text, Row, Button } from '~components/';
 import { useRoute } from '@react-navigation/native';
 import CurrentLocation from '~images/current_location';
 import Geocoder from '~services/geocoder';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import { MarkerIcon } from '~views/Address/Map/components/Marker';
 import { Marker } from 'react-native-maps';
+import openMap from 'react-native-open-maps';
 
 export default function Component() {
   const { params } = useRoute();
@@ -67,6 +68,13 @@ export default function Component() {
           </Marker>
         </Map>
         <Button
+          onPress={() =>
+            openMap({
+              ...stop,
+              end: address.formattedAddress,
+              provider: Platform.OS === 'ios' ? 'apple' : 'google',
+            })
+          }
           style={{ margin: 25, flex: 1, width: 'auto', marginBottom: 30 }}
         >
           Abrir no mapa

@@ -152,17 +152,17 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('Frota.keystore')
-            storePassword 'censurado'
-            keyAlias 'Frota'
-            keyPassword 'censurado'
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
 
         release {
-            storeFile file('Frota.keystore')
-            storePassword 'censurado'
-            keyAlias 'Frota'
-            keyPassword 'censurado'
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
             // if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
             //     storeFile file(MYAPP_UPLOAD_STORE_FILE)
             //     storePassword MYAPP_UPLOAD_STORE_PASSWORD
