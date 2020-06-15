@@ -61,7 +61,7 @@ function Component({ obrigatory }) {
           onPress={() => {
             dispatch(Creators.setFuelPrice(ParseMoney(fuelPrice)));
             dispatch(Creators.setFuelConsumption(fuelConsumption));
-            navigation.navigate('Home');
+            navigation.navigate(obrigatory ? 'AddressList' : 'Home');
           }}
           style={{ marginTop: 'auto' }}
         >
