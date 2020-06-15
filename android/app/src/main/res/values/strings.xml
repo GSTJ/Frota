@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Frota</string>
-    <string name="facebook_app_id">739333690154977</string>
-    <string name="facebook_app_name">Frota</string>
-    <string name="channel">high-priority</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey"></string>
-</resources>
