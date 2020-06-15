@@ -27,7 +27,7 @@ const ReactotronMiddleware = composeWithDevTools(
 const persistConfig = {
   key: '@Frota',
   storage: AsyncStorage,
-  whitelist: ['route', 'waypoints', 'introduction'],
+  whitelist: ['route', 'waypoints', 'introduction', 'settings'],
   transforms: [createFilter('route', ['data'])],
 };
 

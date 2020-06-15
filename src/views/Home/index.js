@@ -20,10 +20,11 @@ import Fuel from '~images/fuel.svg';
 import Distance from '~images/distance.svg';
 import Equals from '~images/equals.svg';
 import Barrier from '~images/barrier.svg';
+import Settings from '~images/settings.svg';
 import { useSelector } from 'react-redux';
 import moment from 'moment';
 import format from '~services/formatter';
-import Geocoder from '~services/geocoder';
+import { TouchableOpacity } from 'react-native';
 
 const ItemPrice = ({ description, price, Icon }) => (
   <Row center split>
@@ -42,13 +43,12 @@ const ItemInfo = ({ description, Icon }) => (
   </IconText>
 );
 
-const fuelKmPerLiter = 10;
-const fuelPrice = 2;
-
 export default function Component() {
   useStatusbar('light');
 
   const route = useSelector(store => store.route);
+  const fuelPrice = useSelector(store => store.settings.fuelPrice);
+  const fuelConsumption = useSelector(store => store.settings.fuelConsumption);
   const navigation = useNavigation();
 
   const summary = route.data?.rota?.trip?.summary;
@@ -59,13 +59,24 @@ export default function Component() {
     0
   );
 
-  const fuelTotal = (summary.length / fuelKmPerLiter) * fuelPrice;
+  const fuelTotal =
+    (summary.length / Number(fuelConsumption)) * Number(fuelPrice);
 
   const total = precoPedagio + fuelTotal;
 
   return (
     <Container>
-      <Title>Resumo da viagem</Title>
+      <Row center>
+        <Title>Resumo da viagem</Title>
+        <TouchableOpacity
+          style={{ padding: 15 }}
+          onPress={() => navigation.navigate('Settings')}
+        >
+          <Settings width={25} height={25}>
+            Configurações
+          </Settings>
+        </TouchableOpacity>
+      </Row>
       <Info>
         <ItemInfo
           description={moment()
@@ -90,6 +101,17 @@ export default function Component() {
         style={{ marginTop: 25, marginHorizontal: 10, width: 'auto' }}
       >
         Paradas
+      </Button>
+      <Button
+        onPress={() => navigation.navigate('AddressList')}
+        style={{
+          marginTop: 25,
+          marginHorizontal: 10,
+          width: 'auto',
+          backgroundColor: '#40B475',
+        }}
+      >
+        Alterar trajeto
       </Button>
     </Container>
   );

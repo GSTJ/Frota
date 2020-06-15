@@ -8,16 +8,19 @@ const Stack = createNativeStackNavigator();
 function Component(props) {
   const introduction = useSelector(state => state.introduction);
   const route = useSelector(state => state.route);
+  const fuelPrice = useSelector(state => state.settings.fuelPrice);
 
+  const fillSettings = fuelPrice ? 'Home' : 'Settings';
   return (
     <Stack.Navigator
       {...props}
-      initialRouteName={route.data ? 'Home' : undefined}
+      initialRouteName={route.data ? fillSettings : undefined}
       screenOptions={{ headerShown: false }}
     >
       {introduction && (
         <Stack.Screen name="Introduction" component={Views.Introduction} />
       )}
+      <Stack.Screen name="Settings" component={Views.Settings} />
       <Stack.Screen name="AddressList" component={Views.Address.List} />
       <Stack.Screen name="AddressMap" component={Views.Address.Map} />
       <Stack.Screen name="AddressSearch" component={Views.Address.Search} />

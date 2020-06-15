@@ -13,6 +13,7 @@ export const TextInput = styled.TextInput`
   border-color: transparent;
   border-radius: 5px;
   border-width: 1px;
+  font-family: 'CeraPro-Regular';
   ${props =>
     props.disabled &&
     css`
@@ -21,5 +22,5 @@ export const TextInput = styled.TextInput`
       border-color: #a9a9a9;
       color: #a9a9a9;
       overflow: hidden;
-  `}
+  `};
 `;
