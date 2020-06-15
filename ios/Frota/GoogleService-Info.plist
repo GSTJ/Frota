@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>374490509472-ihsj2607vkdm95ihqljtq2t15erglnse.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.374490509472-ihsj2607vkdm95ihqljtq2t15erglnse</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCtK8uouotSjSyozVLUQT1ptE9Vu-npkIY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>374490509472</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.frota</string>
+	<key>PROJECT_ID</key>
+	<string>frota-ccr</string>
+	<key>STORAGE_BUCKET</key>
+	<string>frota-ccr.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:374490509472:ios:495fd81b5fef72b77359c5</string>
+	<key>DATABASE_URL</key>
+	<string>https://frota-ccr.firebaseio.com</string>
+</dict>
+</plist>
