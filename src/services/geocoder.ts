@@ -75,7 +75,6 @@ export default async (position: GeocoderInterface) => {
     lat: position.latitude,
     lng: position.longitude,
   });
-  console.log(address);
 
   return FormatAddress(address);
 };
