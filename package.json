@@ -1,6 +1,7 @@
 {
   "name": "frota",
-  "version": "0.0.1",
+  "description":"🚚 Frota is an app to help truckers around Brazil measure costs and discover safe places to stop",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
