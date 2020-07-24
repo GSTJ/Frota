@@ -2,7 +2,7 @@
 
 # 🚚 Frota
 
-## 🙋‍ What is Thesys?
+## 🙋‍ What is Frota?
 
 Frota is an app to help truckers around Brazil measure costs and discover safe places to stop. It was buit for the CCR's hackathon 2020, in which we got to the finals.
 
