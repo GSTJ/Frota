@@ -54,7 +54,7 @@
     "@unform/mobile": "^2.1.0",
     "@welldone-software/why-did-you-render": "^4.2.2",
     "accent-insensitive-search": "^1.0.7",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-hooks": "^1.10.0",
     "brazilian-cities": "^2.1.1",
     "brazilian-values": "^0.7.4",
