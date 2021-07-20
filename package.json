@@ -75,7 +75,7 @@
     "random": "^2.2.0",
     "react": "16.11.0",
     "react-content-loader": "^5.0.4",
-    "react-native": "0.62.2",
+    "react-native": "0.62.3",
     "react-native-bootsplash": "^2.2.4",
     "react-native-code-push": "^6.2.0",
     "react-native-color-matrix-image-filters": "^5.2.4",
