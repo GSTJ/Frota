@@ -42,7 +42,7 @@ export default function Component() {
           <StopContainer
             // Only to test
             source={{
-              uri: `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${item.latitude},${item.longitude}&fov=30&heading=270&pitch=0&key=***REMOVED***`,
+              uri: `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${item.latitude},${item.longitude}&fov=30&heading=270&pitch=0`,
             }}
           >
             <Overlay>
